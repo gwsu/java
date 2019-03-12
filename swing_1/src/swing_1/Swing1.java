@@ -4,6 +4,8 @@ import javax.swing.*;
 import javax.swing.tree.*;
 import javax.swing.event.*;
 
+//
+
 public class Swing1 extends JFrame implements TreeSelectionListener
 {
 	private JLabel label;
