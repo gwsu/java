@@ -21,6 +21,8 @@ public class Swing2 extends JFrame
 		panel1=new JPanel();
 		panel2=new JPanel();
 		panel3=new JPanel();
+		
+		
 
 		panel1.add(label1);
 		panel2.add(label2);
