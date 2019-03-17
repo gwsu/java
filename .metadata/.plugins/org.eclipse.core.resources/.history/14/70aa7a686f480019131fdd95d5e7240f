@@ -1,0 +1,37 @@
+package clock;
+
+import javax.management.timer.Timer;
+
+public class TalkingClock {
+	
+	private int interval;
+	private boolean beep;
+	
+	public TalkingClock(int interal,boolean beep)
+	{
+		this.interal = interal;
+		this.beep =beep;
+		
+	}
+	
+	public void start()
+	{
+	
+		ActionListener listener = new TimePrinter();
+		Timer t = new Timer(interval,listener);
+		t.start();
+		
+	}
+	
+	public class TimePrinter implements ActionListener
+	{
+	public void actionPerformed(ActionEvnet event)
+	{
+		System.out.prinln("At the tone,the time is" + new Date());
+		if (beep) Toolkit.getdefaultToolkit().beep();
+		
+	}
+		
+	}
+
+}
