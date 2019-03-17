@@ -1,3 +1,5 @@
+package cmd;
+
 public class cmd {  
     /** 
      * @param args 
@@ -12,7 +14,7 @@ public class cmd {
        Runtime rn = Runtime.getRuntime();  
        Process p = null;  
        try {  
-           String command = "notepad";  
+           String command = "calc";  
            p = rn.exec(command);  
        } catch (Exception e) {  
            System.out.println("Error win exec ");  
@@ -24,7 +26,7 @@ public class cmd {
        Runtime rn = Runtime.getRuntime();  
        Process p = null;  
        try {  
-           p = rn.exec("\"E:/QQ2008Spring.exe\"");  
+           p = rn.exec("C:/Xilinx/Vivado/Vivado/2016.4/bin/vivado.bat");  
        } catch (Exception e) {  
            System.out.println("Error my exec ");  
        }  
